@@ -1,0 +1,7 @@
+<ul *ngIf="arr.length > 0 else digerEhtimal">
+  <li *ngFor="let number of arr">{{number}}</li>
+</ul>
+
+<ng-template #digerEhtimal>
+  <h1>Array boshdur. :/</h1>
+</ng-template>
